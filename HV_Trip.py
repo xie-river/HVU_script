@@ -14,6 +14,7 @@ class HV:
         self.ip_address = ip_address
         self._rbcp = Rbcp(ip_address)
 
+    ## vset must be a 4-digit hexadecimal number
     def hvset(self, ch, vset):
         while(1):
             try:
